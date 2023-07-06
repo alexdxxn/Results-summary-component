@@ -1,0 +1,176 @@
+.background{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    height: 400px;
+    width: 250px;
+}
+
+.left{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.right{
+    box-shadow:
+         inset 0 0 3em rgba(0,0,0,0.1),
+                0 0 2px rgb(255,255,255),
+               0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+h2, p {
+    width: 100%;
+    text-align: center;
+}
+
+h2{
+    margin: auto;
+    text-align: center;
+}
+
+.grey{
+    color: hsl(241, 100%, 89%);   
+}
+
+.white{
+    color: hsl(0, 0%, 100%);
+}
+
+.circle{
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: px;
+}
+
+.circle > h2 {
+    margin-top: 30px;
+    margin-bottom: -25px;
+}
+
+.big{
+    font-size: 5.5rem;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.score > h2 {
+    margin-bottom: -5px;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+}
+
+.light-red{
+    background-color: hsla(0, 100%, 67%, 0.121);
+}
+
+.orange-yellow{
+    background-color: hsla(39, 100%, 56%, 0.121)
+}
+
+.green-teal{
+    background-color: hsla(166, 100%, 37%, 0.121);
+}
+
+.cobalt-blue{
+    background-color: hsla(234, 85%, 45%, 0.121);
+}
+
+.bar{
+    margin: 10px 0px ;
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.bar > p{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    align-items: center;
+    height: 7vh;
+}
+
+p{
+    font-size: 18px;
+}
+
+#summary{
+    margin-bottom: 10px;
+    padding: 0px;
+    color: hsl(224, 30%, 27%);
+}
+
+.blue{
+    color: hsl(224, 30%, 27%);
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 40px;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 10px;
+    color: white;
+}
+
+@media (max-width: 1440px){
+    .background{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .left{
+        width: 100%;
+        border-radius: 80px;
+        margin-top: -30px;
+        height: 600px;
+    }
+
+    .score{
+        width: 70%;
+    }
+
+    .right{
+        width: 100%;
+        height: 600px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .bar{
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .attribution{
+        align-items: flex-end;
+        margin-top: 200px;
+    }
+
+
+}
